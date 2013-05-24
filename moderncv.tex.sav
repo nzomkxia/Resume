@@ -1,0 +1,149 @@
+%% start of file `jdoe_casual.tex'.
+%% Copyright 2006 Xavier Danaux.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt]{moderncv}
+%\usepackage{bbding}
+% moderncv styles
+\moderncvstyle[roman]{casual}        % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvstyle{classic}       % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+
+% personal data (the given example is exhaustive; just give what you want)
+%\firstname{DONG} \familyname{\hspace{0.5em}LI }
+%\title{Design enthusiast\dots}
+%\address{12 somestreet\\3456 somecity} % for classic style
+%\address{12 somestreet, 3456 somecity}  % for casual style
+
+\phone{15040416558} \email{xdutor@gmail.com}
+
+%\extrainfo{\weblink{www.ctan.org}}
+
+\photo[63pt]{face.jpg} % also optional, and the optional argument is the height the picture must be resized to
+
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+\newcommand{\listitem}[1]{\textbullet\hspace{1em}\parbox[t]{13cm}{#1}\vspace{0.1em}}
+
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textsf{\scriptsize#1}}}% for text subscripts
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\begin{CJK*}{GBK}{kai}
+ \familyname{\hspace{0.2em}Hou}
+ \firstname{Fenglin}
+ \cnname{\hspace{0.2em}侯凤林}
+ \maketitle
+%\makequote
+\hspace{0em}
+\parbox[t]{2cm}{
+    \textbf{学历:}\\
+    \textbf{毕业学校:}\\
+    \textbf{学院:}\\
+    \textbf{专业:}
+}
+%\hspace{1em}
+\parbox[t]{6cm}{
+    本科\\
+    大连理工大学\\
+    物理与光电工程学院\\
+    光信息科学与技术
+}
+%\hspace{1em}
+\parbox[t]{2cm}{
+               \textbf{性别:}\\
+               \textbf{移动电话:}\\
+               \textbf{电子邮件:}\\
+               \textbf{技术博客:}\\
+               }
+%\hspace{1em}
+\parbox[t]{6cm}{
+               男\\
+               \textsl{15040416558}\\
+               \textsl{xdutor@gmail.com}\\
+               \textsl{http://www.dutor.net} }
+\vspace{0.5cm}
+\section{主修课程}
+\cventry{2006--Now}{物理学院}{
+工科数学分析、线性代数、理论力学、量子力学、电动力学、热力学与统计物理、数学物理方法、计算物理学、光学设计、传感器技术与应用、激光原理
+}{}{}{}
+
+\section{辅修课程}
+\cventry{2006--Now}{创新实验学院软件实践班}{
+离散数学、数值方法、操作系统、计算机组成、计算机网络、数据结构及算法、\textsl{51}单片机原理、\textsl{PIC18}单片机原理、网站技术、电脑游戏设计
+}{}{}{}
+
+\section{获得的奖励}
+
+\cventry{2008年 11月} {\textsl{Robocup 3D}仿真组机器人足球大赛中国公开赛三等奖}{Ubuntu环境，C++语言，Bash脚本}{}{}{}
+\cventry{2009年 4月} {\textsl{Robocup 3D}仿真组机器人足球大赛伊朗公开赛二等奖}{Ubuntu环境，C++语言，Bash脚本}{}{}{}
+\cventry{2008--2009} {大连理工大学科技创新奖学金}{}{}{}{}
+\cventry{2010年 4月} {ACM/ICPC大连理工大学邀请赛三等奖}{}{}{}{}
+
+%-------------------------------------------------------------
+
+\section{技术特点}
+\cventry{操作系统}{擅长Debian/Ubuntu \textsl{GNU/Linux}}{熟悉Windows，
+其他Unix/Linux略有尝试}{}{}{}
+
+\cvitem{编程语言}{
+\listitem {\textbf{精通\textsl{C/C++}，熟悉\textsl{C++ STL}}}
+\listitem {熟悉\textsl{AT}\&\textsl{T}汇编及\textsl{80x86}汇编}
+\listitem {熟悉\textsl{51}及\textsl{PIC}系列单片机原理及程序开发}
+\listitem {熟悉\textsl{Shell}、\textsl{PHP}、\textsl{Python}}
+\listitem {熟悉\textsl{Html}、\textsl{CSS}、\textsl{Javascript}}
+}
+
+\cvitem{程序工具}{
+\listitem {\textsl{Linux} + \textsl{Apache} + \textsl{Mysql} + \textsl{PHP}}
+\listitem {\textsl{Vim}、\textsl{GNU Binutils}、\LaTeX}
+\listitem {\textsl{Mathematica}、\textsl{Matlab}、\textsl{gnuplot}、\textsl{Visual Studio 2008}}
+}
+
+\section{外语能力}
+\cventry{英语四级}{513/710}{}{}{}{}
+\cventry{英语六级}{500/710}{}{}{}{}
+\cventry{}{能够流畅地阅读计算机相关\textsl{Threads, References and Papers}}{}{}{}{}
+
+\section{自我评价}
+\cvitem{}{
+\listitem {本人热爱计算机事业，对IT领域的软件开发和设计工作有浓厚的兴趣，能承受较大的工作压力；}
+\listitem {具有很强的团队精神，有良好的组织、协调和沟通能力，有强烈的集体荣誉感；}
+\listitem {自主学习意识和能力强，喜欢钻研新技术，好读书，求甚解，敢于面对和克服困难；}
+\listitem {勇于实践，有比较强的动手能力，有很好的分析问题与解决问题的能力；}
+}
+\section{个人爱好}
+\cventry{} {乒乓球}{读书、长跑、散步、爬山、游泳、台球、音乐、豆瓣、CSDN、Google Reader、tw}{}{}{}
+
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{jdoe_publications}
+\end{CJK*}
+\end{document}

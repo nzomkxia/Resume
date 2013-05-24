@@ -1,0 +1,130 @@
+%% start of file `jdoe_casual.tex'.
+%% Copyright 2006 Xavier Danaux.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt]{moderncv}
+%\usepackage{bbding}
+% moderncv styles
+\moderncvstyle[roman]{casual}        % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvstyle{classic}       % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+
+% personal data (the given example is exhaustive; just give what you want)
+%\firstname{DONG} \familyname{\hspace{0.5em}LI }
+%\title{Design enthusiast\dots}
+%\address{12 somestreet\\3456 somecity} % for classic style
+%\address{12 somestreet, 3456 somecity}  % for casual style
+
+\phone{15840922029} \email{z82507200@gmail.com}
+
+%\extrainfo{\weblink{www.ctan.org}}
+
+%\photo[63pt]{face.jpg} % also optional, and the optional argument is the height the picture must be resized to
+
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+\newcommand{\listitem}[1]{\textbullet\hspace{1em}\parbox[t]{13cm}{#1}\vspace{0.1em}}
+
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textsf{\scriptsize#1}}}% for text subscripts
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\begin{CJK*}{GBK}{kai}
+ \familyname{\hspace{0.2em}Zhuang}
+ \firstname{Minxuan}
+ \cnname{\hspace{0.2em}庄旻轩}
+ \maketitle
+%\makequote
+\hspace{0em}
+\parbox[t]{2cm}{
+    \textbf{学历:}\\
+    \textbf{毕业学校:}\\
+    \textbf{学院:}\\
+    \textbf{专业:}
+}
+%\hspace{1em}
+\parbox[t]{6cm}{
+    硕士在读\\
+    大连理工大学\\
+    计算机学院\\
+    计算机应用技术
+}
+%\hspace{1em}
+\parbox[t]{2cm}{
+               \textbf{性别:}\\
+               \textbf{移动电话:}\\
+               \textbf{电子邮件:}\\
+               \textbf{bitbucket:}\\
+               }
+%\hspace{1em}
+\parbox[t]{6cm}{
+               男\\
+               \textsl{15840922029}\\
+               \textsl{z82507200@gmail.com}\\
+               \textsl{https://bitbucket.org/nzomkxia} }
+\vspace{0.5cm}
+
+\section{项目经历}
+\cventry{2013/4} {豆瓣FM命令行客户端}{利用Wireshark软件对浏览器访问豆瓣FM进行抓包，整理出一套API，使用\textbf{Python} 语言进行开发，并利用pygst 播放歌曲，实现了网页版豆瓣FM 页面中包括登录，加红心，删除，跳过等大部分功能}{}{}{}
+
+\cventry{2012/10--2012/12} {一个简单的编译器}{www.coursera.com中编译原理课程的项目，使用了该课程自定义的一门语言COOL，利用 \textbf{flex}，\textbf{bison}, 并使用\textbf{C++}作为开发语言，完成了一个从词法分析到汇编语言输出(MIPS 格式)的完整编译器。}{}{}{}
+
+\cventry{2009/10 -- 2010/4} {大连理工大学Robocup3D Fantasia 球队代码开发}{通过与server的交互使球队能根据场上的不同情况实现不同的决策。球队代码主要分为socket通讯、参数解析，动作封装、上层决策四个部分。}{}{}{}
+
+\section{教育经历}
+\cventry{2011--现在} {}{大连理工大学\hspace{3em}计算机学院\hspace{3em}计算机应用技术专业}{}{}{}
+\cventry{} {主要课程}{算法设计与分析、高级操作系统、云计算}{}{}{}
+\cventry{2007--2011}{}{大连理工大学\hspace{3em}化工学院\hspace{4em}材料化学专业}{}{}{}
+\cventry{}{}{本科辅修计算机，并在大连理工大学创新实验学院进行相关课程学习}{}{}{}
+\cventry{}{计算机相关课程}{C程序设计、计算机组成原理、数据结构、操作系统、计算机网络、面向对象程序设计}{}{}{}
+%
+
+\section{获得的奖励}
+
+\cventry{2009年} {\textsl{Robocup 3D}仿真组机器人足球大赛中国公开赛一等奖}{}{}{}{}
+\cventry{2010年} {\textsl{Robocup 3D}仿真组机器人足球大赛日本公开赛冠军}{}{}{}{}
+\cventry{2010-2011} {大连理工大学科技创新专项奖学金}{}{}{}{}
+
+%-------------------------------------------------------------
+
+\section{专业技能}
+\cventry{}{熟悉}{Linux下基本命令和工具使用，操作和定制\textsl{Vim}，Linux环境下编程，\textsl{C/C++} 语言}{}{}{}
+\cventry{}{了解}{\textsl{GDB}调试，\textsl{Python}，操作系统，\textsl{Makefile}编写，\textsl{socket}通信, \textsl{git}的基本使用。函数式编程(大约1500行左右代码量)}{}{}{}
+
+\section{外语能力}
+\cventry{雅思}{7.0}{}{}{}{}
+\cventry{BEC中级}{通过}{}{}{}{}
+\cventry{英语六级}{555/710}{}{}{}{}
+\cventry{}{能够流畅地阅读计算机相关英文书籍、论文、参考文档和贴子，能够进行口语交流和问题表述，话题介绍}{}{}{}{}
+
+\nocite{*}
+%\bibliographystyle{plain}
+\bibliography{jdoe_publications}
+\end{CJK*}
+\end{document}

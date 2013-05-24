@@ -1,0 +1,128 @@
+%% start of file `jdoe_casual.tex'.
+%% Copyright 2006 Xavier Danaux.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt]{moderncv}
+%\usepackage{bbding}
+% moderncv styles
+\moderncvstyle[roman]{casual}        % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvstyle{classic}       % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+
+% personal data (the given example is exhaustive; just give what you want)
+%\firstname{DONG} \familyname{\hspace{0.5em}LI }
+%\title{Design enthusiast\dots}
+%\address{12 somestreet\\3456 somecity} % for classic style
+%\address{12 somestreet, 3456 somecity}  % for casual style
+
+\phone{15840922029} \email{z82507200@gmail.com}
+
+%\extrainfo{\weblink{www.ctan.org}}
+
+%\photo[63pt]{face.jpg} % also optional, and the optional argument is the height the picture must be resized to
+
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+\newcommand{\listitem}[1]{\textbullet\hspace{1em}\parbox[t]{13cm}{#1}\vspace{0.1em}}
+
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textsf{\scriptsize#1}}}% for text subscripts
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\begin{CJK*}{GBK}{kai}
+ \familyname{\hspace{0.2em}Zhuang}
+ \firstname{Minxuan}
+ \cnname{\hspace{0.2em}×¯•FÐù}
+ \maketitle
+%\makequote
+\hspace{0em}
+\parbox[t]{2cm}{
+    \textbf{Education:}\\
+    \textbf{University:}\\
+    \textbf{Academy:}\\
+    \textbf{Major:}
+}
+%\hspace{1em}
+\parbox[t]{8cm}{
+    Master Candidate\\
+    Dalian University of Technology\\
+    Institute of Computer Science\\
+    Computer Application Technology
+}
+%\hspace{1em}
+\parbox[t]{2cm}{
+               \textbf{Gender:}\\
+               \textbf{Phone:}\\
+               \textbf{E--mail:}\\
+               \textbf{bitbucket:}\\
+               }
+%\hspace{1em}
+\parbox[t]{5cm}{
+               Male\\
+               \textsl{15840922029}\\
+               \textsl{z82507200@gmail.com}\\
+               \textsl{https://bitbucket.org/nzomkxia} }
+\vspace{0.5cm}
+
+\section{Project Experience}
+\cventry{2013/4} {Douban FM CLI Client}{Use Wireshark to detect packages while visiting web version of Douban FM, get APIs, use  \textbf{Python} to develop the client and pygst to play online music. most of functions in Douban FM website(like rate, unrate, skip login) has been implemented.}{}{}{}
+
+\cventry{2012/10--2012/12} {a compiler}{Project of compiler course from www.coursera.com, implement the class defined language called COOL, Using \textbf{C++} as development language. The compiler includes the procedures from scanning to put out the assemble language(MIPS format)}{}{}{}
+
+\cventry{2009/10 -- 2010/4} {Development of Fantasia(a 3D simulation football team)}{the simulative football players can make different decisions based on different simulations in the game by interacting with server.} {}{}{}
+
+\section{Education}
+\cventry{2011--Present} {}{Dalian University of Technology \hspace{2em}Dept of CS \hspace{2em}Computer Science Application}{}{}{}
+\cventry{} {Courses}{Algorithm Design and Analysis¡¢Advanced Operating System¡¢Cloud computation }{}{}{}
+\cventry{2007--2011}{}{Dalian University of Technology \hspace{2em}Dept of Chemistry\hspace{2em}Material chemistry }{}{}{}
+\cventry{}{}{Minor: Computer Science£¬Study in Institute of Innovation in DUT}{}{}{}
+\cventry{}{Course related with CS}{C Programming Language, Principles of Computer Composition, Data Structure, Operating System, Computer Networks, OOP Program Design}{}{}{}
+%
+
+\section{Awards}
+\cventry{2009} {\textsl{Robocup 3D} First Prize in Robot Soccer Championship China Open}{}{}{}{}
+\cventry{2010} {\textsl{Robocup 3D} First Place in Robot Soccer Championship Japan Open}{}{}{}{}
+\cventry{2010-2011} {Scholarship of Innovation in Dalian University of Technology}{}{}{}{}
+%-------------------------------------------------------------
+
+\section{Profession Skills}
+\cventry{}{Familiar With\hspace{1em}}{Linux Commands and tools£¬operation and customizing \textsl{Vim}, Programming in Linux environment, \textsl{C/C++} }{}{}{}
+\cventry{}{Know about\hspace{1em}}{\textsl{GDB} Debugging, \textsl{Python}, Operation System, \textsl{Makefile}, \ textsl{socket},  \textsl{git}, Functional Programming (about 1,500 lines coding experience)}{}{}{}
+
+\section{Foreign Language}
+\cventry{IELTS}{7.0}{}{}{}{}
+\cventry{BEC Vantage}{Pass}{}{}{}{}
+\cventry{CET6}{555/710}{}{}{}{}
+\cventry{}{Could read English \textsl{books, references and papers} f\mbox{}luently,able to communicate and do presentations in both general and professional topics}{}{}{}{}
+
+\nocite{*}
+%\bibliographystyle{plain}
+\bibliography{jdoe_publications}
+\end{CJK*}
+\end{document}
